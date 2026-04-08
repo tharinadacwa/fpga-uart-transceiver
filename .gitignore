@@ -1,0 +1,26 @@
+# Quartus
+db/
+incremental_db/
+output_files/
+*.qws
+*.sof
+*.pof
+*.jdi
+*.done
+*.rpt
+*.summary
+*.smsg
+*.pin
+
+# ModelSim / Questa
+transcript
+vsim.wlf
+*.wlf
+rtl_work/
+work/
+simulation/questa/rtl_work/
+*.vcd
+
+# Backups
+*.bak
+*.bak*
