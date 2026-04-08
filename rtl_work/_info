@@ -1,0 +1,149 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/thari/Desktop/DE0Verilog
+vbinary_to_7seg
+Z1 !s110 1775492723
+!i10b 1
+!s100 T;<e;amnMNcnK::Z=KS@z3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IS9olLE@d>J6j=BYIzJ9c63
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1775479731
+8binary_to_7seg.v
+Fbinary_to_7seg.v
+!i122 11
+L0 1 31
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1775492723.000000
+!s107 binary_to_7seg.v|
+!s90 -reportprogress|300|-work|work|binary_to_7seg.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vde0_uart_top
+Z8 !s110 1775492724
+!i10b 1
+!s100 bkXlJV]mfg>Wm_@oO46J<1
+R2
+IkZRS^NL2P13SX8N7ik0i<1
+R3
+R0
+w1775480914
+8de0_uart_top.v
+Fde0_uart_top.v
+!i122 15
+L0 1 70
+R4
+r1
+!s85 0
+31
+Z9 !s108 1775492724.000000
+!s107 de0_uart_top.v|
+!s90 -reportprogress|300|-work|work|de0_uart_top.v|
+!i113 1
+R6
+R7
+vreceiver
+R8
+!i10b 1
+!s100 jnmVMZLA^VDR:HhRmDkEB2
+R2
+IK;E^D5N?dh_k]h=>aRLmm2
+R3
+R0
+w1775479685
+8receiver.v
+Freceiver.v
+!i122 13
+L0 1 93
+R4
+r1
+!s85 0
+31
+R5
+!s107 receiver.v|
+!s90 -reportprogress|300|-work|work|receiver.v|
+!i113 1
+R6
+R7
+vtb_de0_uart_top
+R8
+!i10b 1
+!s100 =>8XMIZF3VW@Hk2Jz6Bek3
+R2
+IBE>L]=F;oZXDR9>A8XzZ]1
+R3
+R0
+w1775492545
+8tb_de0_uart_top.v
+Ftb_de0_uart_top.v
+!i122 16
+L0 3 128
+R4
+r1
+!s85 0
+31
+R9
+!s107 tb_de0_uart_top.v|
+!s90 -reportprogress|300|-work|work|tb_de0_uart_top.v|
+!i113 1
+R6
+R7
+vtransmitter
+R1
+!i10b 1
+!s100 EH8;0_;5LiV]zi>d[=YKd3
+R2
+Iko0g_o:YE?2^9iFN=Fod;2
+R3
+R0
+w1775479628
+8transmitter.v
+Ftransmitter.v
+!i122 12
+L0 1 86
+R4
+r1
+!s85 0
+31
+R5
+!s107 transmitter.v|
+!s90 -reportprogress|300|-work|work|transmitter.v|
+!i113 1
+R6
+R7
+vuart
+R8
+!i10b 1
+!s100 Q0WT_SVRk^Kb76Z@CUL_k3
+R2
+I@aI6I7?UO23Y_BSO_]>VI0
+R3
+R0
+w1775481028
+8uart.v
+Fuart.v
+!i122 14
+L0 1 55
+R4
+r1
+!s85 0
+31
+R9
+!s107 uart.v|
+!s90 -reportprogress|300|-work|work|uart.v|
+!i113 1
+R6
+R7

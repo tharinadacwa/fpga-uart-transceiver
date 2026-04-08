@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Apr  6 18:21:53 2026
+Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+Revision Name : de0verilog
+Top-level Entity Name : de0_uart_top
+Family : Cyclone IV E
+Total logic elements : 127
+    Total combinational functions : 122
+    Dedicated logic registers : 56
+Total registers : 56
+Total pins : 31
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

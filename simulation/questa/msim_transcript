@@ -1,0 +1,174 @@
+# Reading pref.tcl
+# do de0verilog_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog  -work work +incdir+C:/Users/thari/Desktop/DE0Verilog {C:/Users/thari/Desktop/DE0Verilog/uart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:48:32 on Apr 07,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thari/Desktop/DE0Verilog" C:/Users/thari/Desktop/DE0Verilog/uart.v 
+# -- Compiling module uart
+# 
+# Top level modules:
+# 	uart
+# End time: 13:48:32 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/Users/thari/Desktop/DE0Verilog {C:/Users/thari/Desktop/DE0Verilog/transmitter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:48:32 on Apr 07,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thari/Desktop/DE0Verilog" C:/Users/thari/Desktop/DE0Verilog/transmitter.v 
+# -- Compiling module transmitter
+# 
+# Top level modules:
+# 	transmitter
+# End time: 13:48:32 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/Users/thari/Desktop/DE0Verilog {C:/Users/thari/Desktop/DE0Verilog/receiver.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:48:32 on Apr 07,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thari/Desktop/DE0Verilog" C:/Users/thari/Desktop/DE0Verilog/receiver.v 
+# -- Compiling module receiver
+# 
+# Top level modules:
+# 	receiver
+# End time: 13:48:32 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/Users/thari/Desktop/DE0Verilog {C:/Users/thari/Desktop/DE0Verilog/de0_uart_top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:48:32 on Apr 07,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thari/Desktop/DE0Verilog" C:/Users/thari/Desktop/DE0Verilog/de0_uart_top.v 
+# -- Compiling module de0_uart_top
+# 
+# Top level modules:
+# 	de0_uart_top
+# End time: 13:48:32 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/Users/thari/Desktop/DE0Verilog {C:/Users/thari/Desktop/DE0Verilog/binary_to_7seg.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:48:32 on Apr 07,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/Users/thari/Desktop/DE0Verilog" C:/Users/thari/Desktop/DE0Verilog/binary_to_7seg.v 
+# -- Compiling module binary_to_7seg
+# 
+# Top level modules:
+# 	binary_to_7seg
+# End time: 13:48:32 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vdel -lib rtl_work -all
+vlib rtl_work
+vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+vlog -work work C:/Users/thari/Desktop/DE0Verilog/transmitter.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:48:45 on Apr 07,2026
+# vlog -reportprogress 300 -work work C:/Users/thari/Desktop/DE0Verilog/transmitter.v 
+# -- Compiling module transmitter
+# 
+# Top level modules:
+# 	transmitter
+# End time: 13:48:45 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/thari/Desktop/DE0Verilog/receiver.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:48:45 on Apr 07,2026
+# vlog -reportprogress 300 -work work C:/Users/thari/Desktop/DE0Verilog/receiver.v 
+# -- Compiling module receiver
+# 
+# Top level modules:
+# 	receiver
+# End time: 13:48:45 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/thari/Desktop/DE0Verilog/binary_to_7seg.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:48:45 on Apr 07,2026
+# vlog -reportprogress 300 -work work C:/Users/thari/Desktop/DE0Verilog/binary_to_7seg.v 
+# -- Compiling module binary_to_7seg
+# 
+# Top level modules:
+# 	binary_to_7seg
+# End time: 13:48:45 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/thari/Desktop/DE0Verilog/uart.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:48:45 on Apr 07,2026
+# vlog -reportprogress 300 -work work C:/Users/thari/Desktop/DE0Verilog/uart.v 
+# -- Compiling module uart
+# 
+# Top level modules:
+# 	uart
+# End time: 13:48:45 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/thari/Desktop/DE0Verilog/de0_uart_top.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:48:45 on Apr 07,2026
+# vlog -reportprogress 300 -work work C:/Users/thari/Desktop/DE0Verilog/de0_uart_top.v 
+# -- Compiling module de0_uart_top
+# 
+# Top level modules:
+# 	de0_uart_top
+# End time: 13:48:46 on Apr 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/thari/Desktop/DE0Verilog/tb_de0_uart_top.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:48:46 on Apr 07,2026
+# vlog -reportprogress 300 -work work C:/Users/thari/Desktop/DE0Verilog/tb_de0_uart_top.v 
+# -- Compiling module tb_de0_uart_top
+# 
+# Top level modules:
+# 	tb_de0_uart_top
+# End time: 13:48:46 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_de0_uart_top
+# vsim -voptargs="+acc" work.tb_de0_uart_top 
+# Start time: 13:48:46 on Apr 07,2026
+# Loading work.tb_de0_uart_top
+# Loading work.de0_uart_top
+# Loading work.uart
+# Loading work.transmitter
+# Loading work.receiver
+# Loading work.binary_to_7seg
+add wave -divider "CLOCK & RESET"
+add wave /tb_de0_uart_top/CLOCK_50
+add wave /tb_de0_uart_top/KEY
+add wave -divider "TX SIDE"
+add wave -radix hex /tb_de0_uart_top/SW
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: thari  Hostname: THARINDA_CWA  ProcessID: 23508
+#           Attempting to use alternate WLF file "./wlft3n5eem".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3n5eem
+add wave /tb_de0_uart_top/TX_OUT
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_de0_uart_top/TX_OUT'.
+add wave -divider "RX SIDE"
+add wave /tb_de0_uart_top/RX_IN
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_de0_uart_top/RX_IN'.
+add wave -radix hex /tb_de0_uart_top/LED
+add wave -divider "TX STATE"
+add wave /tb_de0_uart_top/dut/u_uart/uart_tx/state
+add wave -radix unsigned /tb_de0_uart_top/dut/u_uart/uart_tx/bit_count
+add wave -divider "RX STATE"
+add wave /tb_de0_uart_top/dut/u_uart/uart_rx/state
+add wave -radix unsigned /tb_de0_uart_top/dut/u_uart/uart_rx/bit_count
+run -all
+# Reset done
+# TEST1: SW=0xA  LED=0x0a  PASS
+# TEST2: SW=0x5  LED=0x05  PASS
+# TEST3: SW=0xF  LED=0x0f  PASS
+# All tests done
+# ** Note: $finish    : C:/Users/thari/Desktop/DE0Verilog/tb_de0_uart_top.v(88)
+#    Time: 48510 ns  Iteration: 1  Instance: /tb_de0_uart_top
+# 1
+# Break in Module tb_de0_uart_top at C:/Users/thari/Desktop/DE0Verilog/tb_de0_uart_top.v line 88
+wave zoom full
+# {0 ps} {50935500 ps}
+# End time: 14:21:32 on Apr 07,2026, Elapsed time: 0:32:46
+# Errors: 0, Warnings: 2

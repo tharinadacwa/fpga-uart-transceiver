@@ -1,0 +1,112 @@
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY de0_uart_top
+
+# Optional
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
+
+# -----------------------------
+# Clock
+# -----------------------------
+set_location_assignment PIN_R8 -to CLOCK_50
+
+# -----------------------------
+# Keys (active-low)
+# -----------------------------
+set_location_assignment PIN_J15 -to KEY[0]
+set_location_assignment PIN_E1 -to KEY[1]
+
+# -----------------------------
+# Switches
+# -----------------------------
+set_location_assignment PIN_M1 -to SW[0]
+set_location_assignment PIN_T8 -to SW[1]
+set_location_assignment PIN_B9 -to SW[2]
+set_location_assignment PIN_M15 -to SW[3]
+
+# -----------------------------
+# LEDs
+# -----------------------------
+set_location_assignment PIN_A15 -to LED[0]
+set_location_assignment PIN_A13 -to LED[1]
+set_location_assignment PIN_B13 -to LED[2]
+set_location_assignment PIN_A11 -to LED[3]
+set_location_assignment PIN_D1 -to LED[4]
+set_location_assignment PIN_F3 -to LED[5]
+set_location_assignment PIN_B1 -to LED[6]
+set_location_assignment PIN_L3 -to LED[7]
+
+# -----------------------------
+# JP1 GPIO (GPIO_00..GPIO_015)
+# GPIO_07 = TX out
+# GPIO_08 = RX in
+# -----------------------------
+set_location_assignment PIN_D3 -to GPIO_00
+set_location_assignment PIN_C3 -to GPIO_01
+set_location_assignment PIN_A2 -to GPIO_02
+set_location_assignment PIN_A3 -to GPIO_03
+set_location_assignment PIN_B3 -to GPIO_04
+set_location_assignment PIN_B4 -to GPIO_05
+set_location_assignment PIN_A4 -to GPIO_06
+set_location_assignment PIN_B5 -to GPIO_07
+set_location_assignment PIN_A5 -to GPIO_08
+set_location_assignment PIN_D5 -to GPIO_09
+set_location_assignment PIN_B6 -to GPIO_010
+set_location_assignment PIN_A6 -to GPIO_011
+set_location_assignment PIN_B7 -to GPIO_012
+set_location_assignment PIN_D6 -to GPIO_013
+set_location_assignment PIN_A7 -to GPIO_014
+set_location_assignment PIN_C6 -to GPIO_015
+
+# -----------------------------
+# I/O Standards (3.3-V LVTTL)
+# -----------------------------
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_00
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_01
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_02
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_03
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_04
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_05
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_06
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_07
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_08
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_09
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_010
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_011
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_012
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_013
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_014
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_015
+
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Altera FPGA (Verilog)"
+set_global_assignment -name LAST_QUARTUS_VERSION "25.1std.0 Lite Edition"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name VERILOG_FILE uart.v
+set_global_assignment -name VERILOG_FILE transmitter.v
+set_global_assignment -name VERILOG_FILE receiver.v
+set_global_assignment -name VERILOG_FILE de0_uart_top.v
+set_global_assignment -name VERILOG_FILE binary_to_7seg.v
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

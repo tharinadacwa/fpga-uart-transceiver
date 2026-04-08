@@ -1,0 +1,55 @@
+module uart #(
+    parameter integer CLOCKS_PER_PULSE = 5208
+)(
+    input  wire [3:0] data_in,
+    input  wire       data_en,
+    input  wire       clk,
+    input  wire       rstn,
+    output wire       tx,
+    output wire       tx_busy,
+    input  wire       ready_clr,
+    input  wire       rx,
+    output wire       ready,
+    output wire [7:0] led_out,
+    output wire [6:0] rx_display_out,
+    output wire [6:0] tx_display_out
+);
+    wire [7:0] tx_data;
+    wire [7:0] rx_data;
+
+    assign tx_data = {4'b0000, data_in};
+    assign led_out = rx_data;
+
+    transmitter #(
+        .CLOCKS_PER_PULSE(CLOCKS_PER_PULSE)
+    ) uart_tx (
+        .data_in (tx_data),
+        .data_en (data_en),
+        .clk     (clk),
+        .rstn    (rstn),
+        .tx      (tx),
+        .tx_busy (tx_busy)
+    );
+
+    receiver #(
+        .CLOCKS_PER_PULSE(CLOCKS_PER_PULSE)
+    ) uart_rx (
+        .clk      (clk),
+        .rstn     (rstn),
+        .ready_clr(ready_clr),
+        .rx       (rx),
+        .ready    (ready),
+        .data_out (rx_data)
+    );
+
+    binary_to_7seg tx_converter (
+        .data_in (data_in),
+        .data_out(tx_display_out)
+    );
+
+    binary_to_7seg rx_converter (
+        .data_in (rx_data[3:0]),
+        .data_out(rx_display_out)
+    );
+
+endmodule
